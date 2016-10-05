@@ -1,11 +1,11 @@
 <question>
 
-  Enum.map_reduce([1,2,3,4,5], fn(x, acc) -> x + acc end)
+  Enum.map_reduce([1, 2, 3, 4, 5], 0, fn(x, acc) -> {x, x + acc} end)
 
 </question>
 
 <answer>
 
- 15
+ { [1, 2, 3, 4, 5], 15 }
 
 </answer>
