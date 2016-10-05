@@ -26,6 +26,13 @@ that you want
 Filename must have the `.txt` extension. All other files in the directory will be skipped.
 
 
+### Example
+
+See: http://www.jasonwillems.com/sites/flashcards/q1.html
+
+Use arrow left/right keys to nagivate
+
+
 ### Usage
 
 ```
@@ -36,4 +43,7 @@ iex(1)> Flashcards.generate_site
 
 ### Output
 
-Files will be generated in the output directory. For an input file of `questions/1.txt` an output of `output/q1.html` and `output/a1.html` for the question and answer, respectively
+Files will be generated in the output directory. For an input file of `questions/1.txt` an output of `output/q1.html` and `output/a1.html` for the question and answer, respectively.
+
+Use arrow keys (left and right) to navigate through flashcards. When the end of the series is reached, it will loop back around to the first slide
+

@@ -37,7 +37,7 @@ defmodule Flashcards do
   end
 
   def width_for_str(width) when width < 140 and width > 10 do
-    15/(width/10)
+    15/(width/11)
   end
 
   def width_for_str(width) when width >= 140 do
@@ -52,7 +52,7 @@ defmodule Flashcards do
       <head>
       </head>
       <body role="document" style="position:absolute; width:100%; height:100%; background-color:#3F3F5F; color:#FFF">
-        <div style="display:table; width:100%; min-height:100%;">
+        <div style="display:table; width:100%; height:100%;">
           <div style="display:table-cell; text-align:center; vertical-align:middle; font-size:#{vw_width}vw;">
             #{ Enum.join(text_lines, "<br/>") }
           </div>
